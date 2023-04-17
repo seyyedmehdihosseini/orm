@@ -1,8 +1,15 @@
 package com.orm.entity;
 
+import com.orm.annotations.annotation.Column;
+import com.orm.annotations.annotation.Table;
+
+@Table(name="tbl_user")
 public class UserEntity {
+    @Column(name="u_id_pk",primaryKey = true)
     private Long id;
+    @Column(name="u_name")
     private String name;
+    @Column(name="u_username")
     private String username;
 
 
